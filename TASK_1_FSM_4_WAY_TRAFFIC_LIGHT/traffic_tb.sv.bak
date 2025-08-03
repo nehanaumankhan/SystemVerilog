@@ -1,0 +1,53 @@
+`timescale 1ns/1ns
+
+module tb_traffic;
+
+    // Inputs
+    logic clk;
+    logic clk_en;
+    logic rst_n;
+    logic switch_to_a;
+    logic switch_to_b;
+    logic switch_to_c;
+    logic switch_to_d;
+
+    // Output
+    logic [3:0] light_en;
+
+    // Instantiate the DUT
+    traffic uut (
+        .clk(clk),
+        .clk_en(clk_en),
+        .rst_n(rst_n),
+        .switch_to_a(switch_to_a),
+        .switch_to_b(switch_to_b),
+        .switch_to_c(switch_to_c),
+        .switch_to_d(switch_to_d),
+        .light_en(light_en)
+    );
+
+    // Clock generation: 10ns period
+    initial clk = 0;
+    always #5 clk = ~clk;
+
+    // Test procedure
+    initial begin
+        // Initialize inputs
+        clk = 1;
+        clk_en = 1;
+        rst_n = 0;
+        switch_to_a = 0;
+        switch_to_b = 0;
+        switch_to_c = 0;
+        switch_to_d = 0;
+
+        // Reset pulse
+        #20
+        rst_n = 1;
+	#100
+        //switch to b
+        switch_to_b = 1;
+        #400
+    end
+$finish;
+endmodule

@@ -1,0 +1,61 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/Neha Nauman Khan/OneDrive/Desktop/MODELSIM PROJECTS/TASK_1_FSM_4_WAY_TRAFFIC_LIGHT
+vequation
+Z0 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z1 !s110 1754219148
+!i10b 1
+!s100 Oe1K:9;?YI^>LIHcM>DEN2
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I68XEgmLM>]LDl[a<I2P<X1
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+S1
+Z4 dC:/Users/Neha Nauman Khan/OneDrive/Desktop/MODELSIM PROJECTS/TASK_2_PIPELINE
+w1754219141
+8C:/Users/Neha Nauman Khan/OneDrive/Desktop/MODELSIM PROJECTS/TASK_2_PIPELINE/equation.sv
+FC:/Users/Neha Nauman Khan/OneDrive/Desktop/MODELSIM PROJECTS/TASK_2_PIPELINE/equation.sv
+!i122 22
+L0 4 69
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z6 !s108 1754219148.000000
+!s107 C:/Users/Neha Nauman Khan/OneDrive/Desktop/MODELSIM PROJECTS/TASK_2_PIPELINE/equation.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/Neha Nauman Khan/OneDrive/Desktop/MODELSIM PROJECTS/TASK_2_PIPELINE/equation.sv|
+!i113 1
+Z7 o-work work -sv
+Z8 tCvgOpt 0
+vequation_tb
+R0
+R1
+!i10b 1
+!s100 O@@@:DW:6kP6TJ>SlO8>C3
+R2
+ITl]YgFMgej^4gEAgR]z[B3
+R3
+S1
+R4
+w1754219136
+8C:/Users/Neha Nauman Khan/OneDrive/Desktop/MODELSIM PROJECTS/TASK_2_PIPELINE/equation_tb.sv
+FC:/Users/Neha Nauman Khan/OneDrive/Desktop/MODELSIM PROJECTS/TASK_2_PIPELINE/equation_tb.sv
+!i122 23
+L0 59 62
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/Neha Nauman Khan/OneDrive/Desktop/MODELSIM PROJECTS/TASK_2_PIPELINE/equation_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/Neha Nauman Khan/OneDrive/Desktop/MODELSIM PROJECTS/TASK_2_PIPELINE/equation_tb.sv|
+!i113 1
+R7
+R8

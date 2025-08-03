@@ -1,0 +1,17 @@
+# Compile of traffic_tb.sv was successful.
+# Compile of traffic.sv was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.traffic_tb
+# vsim -gui work.traffic_tb 
+# Start time: 14:33:38 on Aug 03,2025
+# Loading sv_std.std
+# Loading work.traffic_tb
+# Loading work.traffic
+add wave -position insertpoint sim:/traffic_tb/*
+run -all
+# ** Note: $finish    : C:/Users/Neha Nauman Khan/OneDrive/Desktop/MODELSIM PROJECTS/TASK_1_FSM_4_WAY_TRAFFIC_LIGHT/traffic_tb.sv(53)
+#    Time: 430 ns  Iteration: 0  Instance: /traffic_tb
+# 1
+# Break in Module traffic_tb at C:/Users/Neha Nauman Khan/OneDrive/Desktop/MODELSIM PROJECTS/TASK_1_FSM_4_WAY_TRAFFIC_LIGHT/traffic_tb.sv line 53
+# End time: 14:34:51 on Aug 03,2025, Elapsed time: 0:01:13
+# Errors: 0, Warnings: 2

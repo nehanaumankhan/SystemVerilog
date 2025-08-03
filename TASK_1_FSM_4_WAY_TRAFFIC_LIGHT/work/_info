@@ -1,0 +1,86 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/Neha Nauman Khan/OneDrive/Desktop/MODELSIM PROJECTS/EQUATION_PIPELINE
+vtb_traffic
+Z0 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+!s110 1754209990
+!i10b 1
+!s100 3a:kfUg344LFkQA=Z`A:51
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+INlhNVOGlSfiiAO>^=N=_[3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+S1
+Z3 dC:/Users/Neha Nauman Khan/OneDrive/Desktop/MODELSIM PROJECTS/TASK_1_FSM_4_WAY_TRAFFIC_LIGHT
+w1754209971
+Z4 8C:/Users/Neha Nauman Khan/OneDrive/Desktop/MODELSIM PROJECTS/TASK_1_FSM_4_WAY_TRAFFIC_LIGHT/traffic_tb.sv
+Z5 FC:/Users/Neha Nauman Khan/OneDrive/Desktop/MODELSIM PROJECTS/TASK_1_FSM_4_WAY_TRAFFIC_LIGHT/traffic_tb.sv
+!i122 62
+L0 1 73
+Z6 OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1754209990.000000
+Z7 !s107 C:/Users/Neha Nauman Khan/OneDrive/Desktop/MODELSIM PROJECTS/TASK_1_FSM_4_WAY_TRAFFIC_LIGHT/traffic_tb.sv|
+Z8 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/Neha Nauman Khan/OneDrive/Desktop/MODELSIM PROJECTS/TASK_1_FSM_4_WAY_TRAFFIC_LIGHT/traffic_tb.sv|
+!i113 1
+Z9 o-work work -sv
+Z10 tCvgOpt 0
+vtraffic
+R0
+Z11 !s110 1754213604
+!i10b 1
+!s100 S:GgOHo>N0dld`^iAXcb@1
+R1
+ITO91j;zh51L[QcT5698Q50
+R2
+S1
+R3
+w1754213544
+8C:/Users/Neha Nauman Khan/OneDrive/Desktop/MODELSIM PROJECTS/TASK_1_FSM_4_WAY_TRAFFIC_LIGHT/traffic.sv
+FC:/Users/Neha Nauman Khan/OneDrive/Desktop/MODELSIM PROJECTS/TASK_1_FSM_4_WAY_TRAFFIC_LIGHT/traffic.sv
+!i122 81
+L0 1 83
+R6
+r1
+!s85 0
+31
+Z12 !s108 1754213604.000000
+!s107 C:/Users/Neha Nauman Khan/OneDrive/Desktop/MODELSIM PROJECTS/TASK_1_FSM_4_WAY_TRAFFIC_LIGHT/traffic.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/Neha Nauman Khan/OneDrive/Desktop/MODELSIM PROJECTS/TASK_1_FSM_4_WAY_TRAFFIC_LIGHT/traffic.sv|
+!i113 1
+R9
+R10
+vtraffic_tb
+R0
+R11
+!i10b 1
+!s100 a<@>XZgZEW]ShMPHGD?SY3
+R1
+Iza<=JNT`N1D2z]d_AMdV10
+R2
+S1
+R3
+w1754212729
+R4
+R5
+!i122 80
+L0 3 54
+R6
+r1
+!s85 0
+31
+R12
+R7
+R8
+!i113 1
+R9
+R10
