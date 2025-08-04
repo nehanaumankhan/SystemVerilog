@@ -28,7 +28,6 @@ generate
 				end
 		 	end
 		end 	
-	end
 endgenerate
 
 //READING FROM STORAGE 
