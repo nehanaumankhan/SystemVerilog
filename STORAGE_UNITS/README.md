@@ -27,9 +27,7 @@ However, during the RTL development and simulation stages, we still need to **mo
 
 ---
 
-# Flip-Flop Based Storage Unit (SystemVerilog)
-
-This repository contains a synthesizable **flip-flop based memory module** written in SystemVerilog. It is meant as a reference model for ASIC memories (such as SRAM or ROM) and is typically replaced with foundry-optimized memory macros during the physical design phase.
+This directory contains a synthesizable **flip-flop based memory module** written in SystemVerilog. It is meant as a reference model for ASIC memories (such as SRAM or ROM) and is typically replaced with foundry-optimized memory macros during the physical design phase.
 
 ## 🧠 Purpose
 In ASIC designs, memory macros are **not coded explicitly** in RTL. Instead:
