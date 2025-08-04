@@ -1,7 +1,3 @@
-#!/bin/bash
-
-mkdir -p storage_unit
-cat > storage_unit/README.md << 'EOF'
 # 📘 Flip-Flop Based Storage Unit – RTL Reference Model for ASIC Memory
 
 ## 🔎 Overview
