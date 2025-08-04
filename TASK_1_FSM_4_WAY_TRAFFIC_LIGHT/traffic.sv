@@ -27,22 +27,22 @@ localparam time_a = 8'd2, time_b = 8'd4, time_c = 8'd6, time_d = 8'd8;
 always_comb begin
     next_state = current_state;
     case (current_state)
-        STATE_A: if (counter > (time_a-1)) begin
+        STATE_A: if (counter >= (time_a-1)) begin
             if (switch_to_b) next_state = STATE_B;
             else if (switch_to_c) next_state = STATE_C;
             else if (switch_to_d) next_state = STATE_D;
         end
-        STATE_B: if (counter > (time_b-1)) begin
+        STATE_B: if (counter >= (time_b-1)) begin
             if (switch_to_a) next_state = STATE_A;
             else if (switch_to_c) next_state = STATE_C;
             else if (switch_to_d) next_state = STATE_D;
         end
-        STATE_C: if (counter > (time_c-1)) begin
+        STATE_C: if (counter >= (time_c-1)) begin
             if (switch_to_a) next_state = STATE_A;
             else if (switch_to_b) next_state = STATE_B;
             else if (switch_to_d) next_state = STATE_D;
         end
-        STATE_D: if (counter > (time_d-1)) begin
+        STATE_D: if (counter >= (time_d-1)) begin
             if (switch_to_a) next_state = STATE_A;
             else if (switch_to_b) next_state = STATE_B;
             else if (switch_to_c) next_state = STATE_C;
