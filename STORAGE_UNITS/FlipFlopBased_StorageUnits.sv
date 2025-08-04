@@ -1,50 +1,43 @@
-//======================================================
-// Flip-Flop Based Storage Unit - RTL Reference Model
-// This is a synthesizable behavioral model of memory
-// typically used in RTL design flow to simulate the 
-// behavior of actual ASIC memory macros (SRAM, etc.).
-//======================================================
+module storage #(parameter WIDTH = 1024, DEPTH = 512) (
+	input clk,    // Clock
+	input rst_n,  // Asynchronous reset active low
+	
+	//READING SIGNALS
+	input logic rd_en,
+	input logic [$clog2(DEPTH)-1:0] rd_addrs, //non-synthesizable costruct; will be resolved in compilation
+	output logic [WIDTH-1:0] rd_data,
 
-module storage_unit #(
-    parameter WIDTH = 8,   // Width of each memory word
-    parameter DEPTH = 16   // Number of memory locations
-)(
-    input  logic                 clk,        // Clock signal
-    input  logic                 rst_n,      // Active-low reset
-    input  logic [$clog2(DEPTH)-1:0] addr,   // Address bus
-    input  logic [WIDTH-1:0]     data_in,    // Data to be written
-    input  logic                 write_en,   // Write enable
-    input  logic                 read_en,    // Read enable
-    output logic [WIDTH-1:0]     data_out    // Data being read
-);
+	//WRITING SIGNALS
+	input logic wr_en,
+	input logic [$clog2(DEPTH)-1:0] wr_addrs, //non-synthesizable costruct; will be resolved in compilation
+	input logic [WIDTH-1:0] wr_data
+	);
 
-    // Memory array implemented using flip-flops
-    logic [WIDTH-1:0] mem [DEPTH-1:0];
+logic [DEPTH-1:0][WIDTH-1:0] storage;
 
-    // Synchronous Write Operation
-    always_ff @(posedge clk or negedge rst_n) begin
-        if (!rst_n) begin
-            // Reset all memory to 0 on reset (optional)
-            integer i;
-            for (i = 0; i < DEPTH; i = i + 1) begin
-                mem[i] <= '0;
-            end
-        end
-        else if (write_en) begin
-            // Write data to specified address
-            mem[addr] <= data_in;
-        end
-    end
+//WRITNG IN TO STORAGE
+generate
+	for (genvar i = 0; i < DEPTH; i++) begin
+		//We write any procesdural block in the loop's body
+		always_ff @(posedge clk or negedge rst_n) begin 
+		 	if(~rst_n) begin
+		 		storage[i] <= '0;
+		 	end 
+		 	else if((wr_addrs == i) && (wr_en)) begin
+					storage[i] <= wr_data;
+				end
+		 	end
+		end 	
+	end
+endgenerate
 
-    // Synchronous Read Operation
-    always_ff @(posedge clk or negedge rst_n) begin
-        if (!rst_n) begin
-            data_out <= '0;
-        end
-        else if (read_en) begin
-            // Read data from specified address
-            data_out <= mem[addr];
-        end
-    end
+//READING FROM STORAGE 
+always_comb begin //reading logic is combinational
+	for (int i = 0; i < DEPTH; i++) begin //This for loop will not replicate in hardware 
+		if((i == rd_addrs) && rd_en) begin
+			rd_data = storage[i];
+		end
+	end
 
-endmodule
+end 
+endmodule : storage
