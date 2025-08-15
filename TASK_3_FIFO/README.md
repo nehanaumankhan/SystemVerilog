@@ -1,16 +1,10 @@
 # First-Word Fall-Through (FWFT) FIFO Implementation
 
----
-
 ## Overview
 This repository contains a Verilog implementation of a synchronous First-Word Fall-Through (FWFT) FIFO with configurable width and depth. The design includes a comprehensive testbench for verification.
 
----
-
 ## What is a First-Word Fall-Through FIFO?
 A First-Word Fall-Through (FWFT) FIFO, also known as a "look-ahead" FIFO, is a variation where the first word written to the FIFO immediately appears at the output without requiring a read operation. This differs from standard FIFOs where you need to assert the read signal to get the first data word.
-
----
 
 ### Key Characteristics:
 - Data becomes available on `read_data` as soon as it's written (when FIFO is empty)
@@ -22,8 +16,6 @@ A First-Word Fall-Through (FWFT) FIFO, also known as a "look-ahead" FIFO, is a v
 - Interfaces between clock domains where receiver needs immediate access
 - Systems where the consumer cannot generate read requests immediately
 - DSP applications where pipeline stalls must be minimized
-
----
 
 ## Implementation Details
 
@@ -44,8 +36,6 @@ A First-Word Fall-Through (FWFT) FIFO, also known as a "look-ahead" FIFO, is a v
 | read_data    | output    | WIDTH      | Data output from FIFO (FWFT)             |
 | fifo_full    | output    | 1          | FIFO full status flag                    |
 | fifo_empty   | output    | 1          | FIFO empty status flag                   |
-
----
 
 ### Design Implementation
 1. **Memory Buffer**: 
@@ -68,8 +58,6 @@ A First-Word Fall-Through (FWFT) FIFO, also known as a "look-ahead" FIFO, is a v
    - Current read data always available on `read_data` output
    - No need for pop operation to see first word
 
----
-
 ## Testbench Features
 
 ### Verification Approach
@@ -80,8 +68,6 @@ A First-Word Fall-Through (FWFT) FIFO, also known as a "look-ahead" FIFO, is a v
 5. **Wrap-around**: Verifies pointer behavior at boundaries
 6. **Randomized Testing**: Stress tests with random operations
 
----
-
 ### Key Testbench Components
 1. Clock and reset generation
 2. Randomized stimulus generation
@@ -90,10 +76,8 @@ A First-Word Fall-Through (FWFT) FIFO, also known as a "look-ahead" FIFO, is a v
 5. Coverage collection
 6. Waveform dumping for debugging
 
----
-
 ## Simulation Results
-![Simulation Waveform](fifo_output_waveforms.png)
+![Simulation Results](fifo_output_waveforms.png)
 The simulation output (provided as PNG) shows:
 - Correct FWFT behavior (data appears without pop)
 - Proper full/empty flag generation
@@ -101,21 +85,15 @@ The simulation output (provided as PNG) shows:
 - Accurate count updates
 - Handling of concurrent push/pop operations
 
----
-
 ## How to Run Simulation
 1. Compile RTL and testbench with your preferred Verilog simulator
 2. Run simulation with waveform dumping enabled
 3. Verify all test cases pass
 4. Check coverage metrics
 
----
-
 ## Dependencies
 - Verilog simulator (ModelSim, VCS, Riviera-PRO, etc.)
 - Waveform viewer for debugging
-
----
 
 ## Future Enhancements
 1. Add almost full/empty flags
