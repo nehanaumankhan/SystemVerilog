@@ -25,7 +25,7 @@ In the first approach, we mapped the equation **as given** into pipeline stages.
 4. **Stage 4:** Combine all partial results into final \( E \).  
 
 ### 🔹 Pipeline Diagram (Method 1)
-![Pipeline Diagram – Method 1](Architectural Diagram (Method 1).png)
+![Pipeline Diagram – Method 1](Architectural_Diagram_Method1.png)
 
 ---
 
@@ -39,7 +39,7 @@ E = 5A + 5B - 4C + 3D
 This form significantly reduces **hardware complexity** while producing the same result.  
 
 ### 🔹 Pipeline Diagram (Method 2)
-![Pipeline Diagram – Method 2](Architectural Diagram (Method 2).png)
+![Pipeline Diagram – Method 2](Architectural_Diagram_Method2.png)
 
 ### 🔹 Pipeline Breakdown (Method 2)
 1. **Stage 1:** Compute \( 5A \), pass B, C, D forward.  
@@ -114,9 +114,10 @@ Later, another feature was added: a **stall signal**.
 | 3         | 0  | 0  | 0  | 2304       | ✅      |
 | 4         | 2  | 1  | 1  | 2315       | ✅      |
 
-![Output Waveform of Equation Pipeline (without stall)](equation_tb Output Waveforms.png)
+![Output Waveform of Equation Pipeline (without stall)](equation_tb_Output_Waveforms.PNG)
 
-![Output Waveform of Equation Pipeline (with stall)](stall_tb Output Waveforms.png)
+![Output Waveform of Equation Pipeline (with stall)](stall_tb_Output_Waveforms.PNG)
+
 ---
 
 ## 📖 Key Learnings
