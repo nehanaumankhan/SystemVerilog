@@ -38,10 +38,10 @@ E = 5A + 5B - 4C + 3D
 
 This form significantly reduces **hardware complexity** while producing the same result.  
 
-### 🔹 Pipeline Diagram (Method 2)
+### Pipeline Diagram (Method 2)
 ![Pipeline Diagram – Method 2](Architectural_Diagram_Method2.png)
 
-### 🔹 Pipeline Breakdown (Method 2)
+### Pipeline Breakdown (Method 2)
 1. **Stage 1:** Compute \( 5A \), pass B, C, D forward.  
 2. **Stage 2:** Compute \( 5B \), add to \( 5A \).  
 3. **Stage 3:** Compute \( -4C \), add to partial result.  
@@ -117,7 +117,7 @@ Later, another feature was added: a **stall signal**.
 Output Waveform of Equation Pipeline (without stall)
 ![Output Waveform of Equation Pipeline (without stall)](equation_tb_Output_Waveforms.PNG)
 
-Output Waveform of Equation Pipeline (without stall)
+Output Waveform of Equation Pipeline (with stall)
 ![Output Waveform of Equation Pipeline (with stall)](stall_tb_Output_Waveforms.PNG)
 
 ---
