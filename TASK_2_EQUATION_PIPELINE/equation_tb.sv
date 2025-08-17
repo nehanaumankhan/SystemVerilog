@@ -1,3 +1,5 @@
+//equation_tb.sv
+// This is the testbench for the equation module
 `timescale 1ns/1ns
 
 module equation_tb;

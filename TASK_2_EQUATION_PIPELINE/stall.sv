@@ -1,4 +1,7 @@
-//I have followed Method 1 for this RTL; E = 5A+5B-4C+5D
+//stall.sv
+// This module implements a pipelined equation calculation with stall functionality
+
+//I have followed Method 2 for this RTL; E = 5A+5B-4C+5D
 //Comments have been added by ChatGpt
 
 module stall (

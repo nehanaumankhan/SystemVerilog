@@ -1,3 +1,6 @@
+//stall_tb.sv
+// This is the testbench for the stall module
+
 `timescale 1ns/1ns
 
 module stall_tb;
