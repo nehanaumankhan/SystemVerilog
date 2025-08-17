@@ -1,4 +1,4 @@
-//I have followed Method 1 for this RTL; E = 5A+5B-4C+5D
+//I have followed Method 1 for this RTL; E = 5A+5B-4C+3D
 //Comments have been added by ChatGpt
 
 module equation (
@@ -59,15 +59,15 @@ module equation (
         end
     end
 
-    
-    // Final combinational stage
-    assign E = s3_reg[20:10] + ((s3_reg[9:0] << 1) + s3_reg[9:0]); // +3D
+    //Stage 4 Combinational
+    assign E = s3_reg[20:10] + ((s3_reg[9:0] << 1) + s3_reg[9:0]); // 5A + 5B - 4C + 3D;
 
     //Stages output
     always_comb begin
-        s1 <= s1_reg[36:26];
-        s2 <= s2_reg[29:18]; 
-        s3 <= s3_reg[20:10];
+        s1 = s1_reg[36:26];
+        s2 = s2_reg[29:18]; 
+        s3 = s3_reg[20:10];
      end 
 endmodule: equation
 
+// End of equation module

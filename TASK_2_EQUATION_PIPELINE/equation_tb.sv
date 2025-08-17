@@ -10,7 +10,7 @@ module equation_tb;
 	logic [15:0] E;
 
 // INSTANTIATION OF DUT
-stall dut(
+equation dut(
 	.clk(clk),
     .rst(rst),
     .A(A),
@@ -28,7 +28,7 @@ always #5 clk = ~clk; // Time Period = 10ns
 
 // TEST SEQUENCE
 initial begin
-	clk = 1; rst = 0; A = 0; B = 0; C = 0;
+	clk = 1; rst = 0; 
 	#20;
 	rst = 1;
 	@(posedge clk);
@@ -68,3 +68,4 @@ initial begin
 end
 
 endmodule : equation_tb
+// End of testbench module
