@@ -114,8 +114,10 @@ Later, another feature was added: a **stall signal**.
 | 3         | 0  | 0  | 0  | 2304       | ✅      |
 | 4         | 2  | 1  | 1  | 2315       | ✅      |
 
+Output Waveform of Equation Pipeline (without stall)
 ![Output Waveform of Equation Pipeline (without stall)](equation_tb_Output_Waveforms.PNG)
 
+Output Waveform of Equation Pipeline (without stall)
 ![Output Waveform of Equation Pipeline (with stall)](stall_tb_Output_Waveforms.PNG)
 
 ---
