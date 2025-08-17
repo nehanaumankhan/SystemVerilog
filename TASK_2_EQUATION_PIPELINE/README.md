@@ -24,7 +24,7 @@ In the first approach, we mapped the equation **as given** into pipeline stages.
 3. **Stage 3:** Compute \( (A + B - C + D) \).  
 4. **Stage 4:** Combine all partial results into final \( E \).  
 
-### 🔹 Pipeline Diagram (Method 1)
+### Pipeline Diagram (Method 1)
 ![Pipeline Diagram – Method 1](Architectural_Diagram_Method1.png)
 
 ---
@@ -120,7 +120,7 @@ Later, another feature was added: a **stall signal**.
 
 ---
 
-## 📖 Key Learnings
+## Key Learnings
 - **Pipeline design methodology** and its importance in digital systems.  
 - How to **map arithmetic equations** into multiple pipeline stages.  
 - The benefit of **simplification of logic** before implementation.  
@@ -130,7 +130,7 @@ Later, another feature was added: a **stall signal**.
 
 ---
 
-## 📌 Files in the Repository
+## Files in the Repository
 - `equation.sv` → RTL for simplified Method 2.  
 - `equation_tb.sv` → Testbench for equation module.  
 - `stall.sv` → RTL with stall functionality.  
@@ -140,7 +140,7 @@ Later, another feature was added: a **stall signal**.
 
 ---
 
-## 👩‍💻 Author
+## Author
 **Neha Nauman Khan**  
 B.E. Computer & Information Systems Engineering  
 NED University of Engineering & Technology
