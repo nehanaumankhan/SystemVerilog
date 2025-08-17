@@ -1,4 +1,4 @@
-# 4-Stage Pipelined Arithmetic Expression Processor
+# 4-Stage Pipelined Arithmetic Expression Module
 
 ## Project Overview
 This project was assigned by **Sir Ali Raza** to explore the concept of **pipelining** in digital systems.  
