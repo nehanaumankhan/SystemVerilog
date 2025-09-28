@@ -3,7 +3,7 @@
 module ByPass_FIFO_tb;
 	// Parameter
 	localparam int DEPTH = 4;
-    localparam int WIDTH = 4;
+    localparam int WIDTH = 8;
 
 	// DUT signals
 	logic 							clk;
@@ -13,7 +13,7 @@ module ByPass_FIFO_tb;
 	logic [WIDTH*DEPTH-1:0]	        data_out;
 
 	// DUT instance
-	beat_shift_register #(
+	ByPass_FIFO #(
 		.DEPTH(DEPTH),
         .WIDTH(WIDTH)
 	) dut (
