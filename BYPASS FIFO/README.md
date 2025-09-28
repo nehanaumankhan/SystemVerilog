@@ -40,10 +40,10 @@ ByPass FIFOs are widely used in:
 ---
 
 ## 📂 Project Structure
-├── ByPass_FIFO.sv # SystemVerilog implementation of ByPass FIFO
-├── ByPass_FIFO_tb.sv # Testbench with stimulus
-├── waveform.png # Simulation results (GTKWave / ModelSim screenshot)
-└── README.md # Documentation (this file)
+├── ByPass_FIFO.sv # SystemVerilog implementation of ByPass FIFO  
+├── ByPass_FIFO_tb.sv # Testbench with stimulus  
+├── waveform.png # Simulation results (GTKWave / ModelSim screenshot)  
+└── README.md # Documentation (this file)  
 
 ---
 
@@ -92,7 +92,7 @@ The testbench:
 
 ## 📊 Simulation Results
 Below is the waveform captured from simulation:
-![Waveform](./ByPass FIFO Waveforms.png)
+![Waveform](./ByPass%20FIFO%20Waveforms.png)
 
 ### Observations:
 - At each `posedge clk` when `write_en = 1`, `data_in` is:
